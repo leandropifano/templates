@@ -1,2 +1,2 @@
-# template
+# templates
  templates web
