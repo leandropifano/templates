@@ -10,28 +10,29 @@
 	<link href='https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
-
-	<section class="theme-selector">
-
-		<label for="theme-color">Color: </label>
-		<select name="theme-color" id="theme-color" onchange="seteo_color()">
-			<option value="color-01" selected>Verde</option>
-			<option value="color-02">Azul</option>
-			<option value="color-03">Naranja</option>
-		</select>
-
-		<label for="theme-img">Cabecera: </label>
-		<select name="theme-img" id="theme-img" onchange="seteo_img()">
-			<option value="img-01">Mosaico</option>
-			<option value="img-02">Calle</option>
-			<option value="img-03" selected>Dibujo</option>
-		</select>
-
-	</section>
+<body onload="seteo_selects()">
 
 	<header class="header">
-		<h1><img src="images/logo.png" alt="Logo - template"></h1>
+		<section class="theme-selector">
+
+			<label for="theme-color">Color: </label>
+			<select name="theme-color" id="theme-color" title="color-01" onchange="seteo_color()">
+				<option value="color-01" default selected="selected">Verde</option>
+				<option value="color-02">Azul</option>
+				<option value="color-03">Naranja</option>
+			</select>
+
+			<label for="theme-img">Cabecera: </label>
+			<select name="theme-img" id="theme-img" onchange="seteo_img()">
+				<option value="img-01">Mosaico</option>
+				<option value="img-02">Calle</option>
+				<option value="img-03" selected>Dibujo</option>
+			</select>
+
+		</section>
+
+		<h1><img name="logo" src="images/logo.png" alt="Logo - template"></h1>
+
 	</header>
 
 	<nav class="navbar">

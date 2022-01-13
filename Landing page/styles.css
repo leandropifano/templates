@@ -89,7 +89,13 @@ table {
 
 	body { text-align: center; font:300 20px/1.7 'Roboto Condensed'; background-color: var(--first-color);}
 
-	.header { display: flex; justify-content:center; align-items:center;}
+	.header { display: flex; flex-flow: column; justify-content:center; align-items:center;}
+  img[name="logo"]:hover { height: calc(100% + 0.5px);}
+
+  /*.theme-selector{ position: absolute; left: 75%; right: 0; top: 10px; color: #fff; background-color: #000; opacity: 50%}*/
+  .theme-selector{ align-self: flex-end; margin-top: -11%; margin-right: 2px; padding: 3px; border-radius: 10px ;color: #fff; background-color: #899; border: 1px dashed gray; opacity: 20%}
+
+  .theme-selector:hover{ opacity: 100%;}
 
 	.navbar { display: flex; align-items:center; justify-content:center;}
 
@@ -99,8 +105,10 @@ table {
 /* -------- 2. GENERIC ITEMS -------- */
 
 	.header { height: 450px; background: var(--header-img) no-repeat center top; background-size: cover;}
-	.navbar { height: 63px; background: var(--first-color); border-bottom: 1px dashed var(--second-color);}
-		.navbar a { padding: 0 20px; color: #fff; text-decoration: none; text-transform: uppercase; font: 20px 'Stint Ultra Condensed';}
+
+  .navbar { height: 63px; background: var(--first-color); border: 1px dashed var(--second-color);}
+	.navbar a { padding: 0 20px; color: #fff; text-decoration: none; text-transform: uppercase; font: 20px 'Stint Ultra Condensed';}
+  .navbar a:hover { text-decoration: underline; }
 
 	.title { margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;}
 
@@ -108,9 +116,9 @@ table {
 
 	.btn { display: inline-block; padding: 10px 40px; border:2px solid #fff; color: #fff; text-decoration: none;}
 
-/* -------- 3. PARTS OF WEB -------- */
+  .btn:hover{ background: hsla(360, 100%, 100%, 0.5);}
 
-  .theme-selector{ position: absolute; left: 75%; right: 0; top: 10px; color: #fff; background-color: #000; opacity: 50%}
+/* -------- 3. PARTS OF WEB -------- */
 
 	.content { padding: 80px 0;}
 
@@ -130,6 +138,7 @@ table {
 
 	.list-productos figure { position: relative; width: 100px; height: 100px; }
 	.list-productos img { position: relative; z-index: 1; border-radius: 50%; width: 100px; height: 100px; opacity: 95%;}
-
+  .list-productos img:hover { box-shadow: 8px 8px 10px hsla(360, 100%, 100%, 0.5);}
 	.list-productos li { padding: 0 30px;}
 	.list-productos figcaption { position: absolute; left: 0; right: 0; bottom: -40px;}
+  .list-productos img:hover + figcaption { font-weight: bold;}

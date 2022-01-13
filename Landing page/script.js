@@ -1,9 +1,14 @@
-
 //Obtener elemento HTML por ID y agregar listener:
 let $color = document.getElementById('theme-color');
-$color.addEventListener('onchange', seteo_color);
 let $img = document.getElementById('theme-img');
+$color.addEventListener('onchange', seteo_color);
 $img.addEventListener('onchange', seteo_img);
+
+//Reseteo los select boxes
+function seteo_selects(){
+  document.getElementById('theme-color').selectedIndex = 0;
+  document.getElementById('theme-img').selectedIndex = 0;
+}
 
 //Cambiar los colores del tema
 function seteo_color(){
