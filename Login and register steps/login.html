@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home | Login</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--ESTILOS Y JAVASCRIPT-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+	<!--FUENTES DE GOOGLE-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body onload="seteo_selects()">
+	<div class="wrapper login">
+
+		<section class="theme-selector">
+			<label for="theme-color">Color: </label>
+			<select name="theme-color" id="theme-color" title="color-01" onchange="seteo_color()">
+				<option value="color-01" default selected="selected">Verde</option>
+				<option value="color-02">Azul</option>
+				<option value="color-03">Naranja</option>
+			</select>
+		</section>
+
+		<div class="contain content">
+			<header class="header">
+				<div class="contain">
+					<h1><img src="images/logo.png" alt="Logo - Template"></h1>
+				</div>
+			</header>
+
+			<form class="form">
+				<fieldset>
+					<div class="col">
+						<label for="user">USUARIO <span class="tooltip" title="formato de usuario">?</span></label>
+						<input id="user" type="text">
+						<span class="error" id="user-error">revisa este campo</span>
+
+						<label for="passwd">CONTRASEÑA <span class="tooltip"title="su contraseña">?</span></label>
+						<input id="passwd" type="password">
+						<span class="error" id="passwd-error">revisa este campo</span>
+					</div>
+				</fieldset>
+
+				<input type="button" class="btn" id="button-send" value="LOGIN" onclick="error_login()">
+
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

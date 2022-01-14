@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio | Paso 2</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--ESTILOS Y JAVASCRIPT-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+	<!--FUENTES DE GOOGLE-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body onload="seteo_selects()">
+	<div class="wrapper paso-2">
+
+		<section class="theme-selector">
+			<label for="theme-color">Color: </label>
+			<select name="theme-color" id="theme-color" title="color-01" onchange="seteo_color()">
+				<option value="color-01" default selected="selected">Verde</option>
+				<option value="color-02">Azul</option>
+				<option value="color-03">Naranja</option>
+			</select>
+		</section>
+
+		<header class="header">
+			<div class="contain">
+				<h2><img name="logo" src="images/logo.png" alt="Logo-Template"></h2>
+			</div>
+		</header>
+
+		<nav class="navbar">
+			<span class="item"><span>1</span> <span>Datos personales</span></span>
+			<span class="item"><span>2</span> <span>Otros de interés</span></span>
+			<span class="item"><span>3</span> <span>Finalizar</span></span>
+		</nav>
+
+		<div class="contain content">
+
+			<header>
+				<h2>Un poco más</h2>
+				<p>Si te apetece cuentanos algo de tí</p>
+			</header>
+			<form class="form">
+				<fieldset>
+					<div class="col all nobg">
+						<label>BREVE DESCRIPCIÓN <span class="tooltip">?</span></label>
+						<textarea></textarea>
+					</div>
+
+					<div class="col">
+						<label>SELECCIONA PAÍS <span class="tooltip">?</span></label>
+
+						<div class="select">
+							<select>
+								<option>Selecciona una</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="col">
+						<label>TWITTER <span class="tooltip">?</span></label>
+						<input type="text">
+					</div>
+				</fieldset>
+
+				<input type="button" class="btn" id="button-send" value="Siguiente">
+				
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>
