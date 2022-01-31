@@ -1,0 +1,49 @@
+/*----EFECTS TRANSFORM-TRANSITIONS----*/
+
+img[name="logo"]:hover{ 
+    height: calc(100% + 0.5px);}
+
+.theme-selector:hover{
+    opacity: 100%;}
+
+.navbar a:hover{
+    text-decoration: underline;}
+
+/*---Se activa con script.js---*/
+.deslizar{ 
+    position: relative; 
+    opacity: 0; 
+    transition: 1.5s all ease }
+.deslizar.active{ 
+    transform: translateX(0); 
+    opacity: 1 }
+.desizq{
+    transform: translateX(600px)}
+.desder{
+    transform: translateX(-300px)}
+/*-----------------------------*/
+
+.title + .fas:hover{ 
+    transform: rotate(-10deg);
+    transition: 0.5s}
+
+.title + .fa-paperclip:hover{ 
+    transform: skewX(40deg);
+    transition: 1.5s}
+
+.title + .fa-hand-holding-usd:hover{ 
+    transform: translate(1em,0);
+    transition: 0.5s}
+
+.title + .fa-map-marker-alt:hover{ 
+    transform: skewY(5deg);
+    transition: 1s}
+
+.btn:hover{ 
+    background: hsla(360, 100%, 100%, 0.5);}
+
+.list-productos img:hover{
+    box-shadow: 8px 8px 10px hsla(360, 100%, 100%, 0.5);}
+
+.list-productos img:hover + figcaption{ 
+    font-weight: bold;}

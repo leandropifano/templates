@@ -1,10 +1,31 @@
-//Obtener elemento HTML por ID y agregar listener:
+//Deslizar los titulos---------------------------------------------------------------
+function deslizar() {
+  var deslizar = document.querySelectorAll(".deslizar");
+  //Tomo la altura de la pantalla, la distancia del item a mover con respecto a ella
+  //y la altura a la que el elemento se va a hacer visible
+  for (var i = 0; i < deslizar.length; i++) {
+    var windowHeigth = window.innerHeight;
+    var elementTop = deslizar[i].getBoundingClientRect().top;
+    var elementVisible = 200;
+    //Chequeo y activo el item
+    if (elementTop < windowHeigth - elementVisible) {
+      deslizar[i].classList.add("active");
+    } else {
+      deslizar[i].classList.remove("active");
+    }
+  }
+}
+//Agrego Listener
+window.addEventListener("scroll", deslizar);
+//-----------------------------------------------------------------------------------
+
+//Obtengo elemento HTML por ID y agrego listener:
 let $color = document.getElementById('theme-color');
 let $img = document.getElementById('theme-img');
 $color.addEventListener('onchange', seteo_color);
 $img.addEventListener('onchange', seteo_img);
 
-//Reseteo los select boxes
+//Resetear los select boxes
 function seteo_selects(){
   document.getElementById('theme-color').selectedIndex = 0;
   document.getElementById('theme-img').selectedIndex = 0;
