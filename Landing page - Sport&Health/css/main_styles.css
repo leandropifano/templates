@@ -60,7 +60,7 @@ body {
     .header-title {
       align-self: center;
       border-radius: 5% 5% 15% 15%;
-      font: 30px "SportRecovery";
+      font: 30px "SportHealth";
       letter-spacing: -3.5pt;
       color: var(--second-color);
     }
@@ -174,7 +174,7 @@ body {
     z-index: 1;
     color: var(--third-color);
     margin-bottom: 40px;
-    font: 50px "SportRecovery";
+    font: 50px "SportHealth";
     letter-spacing: -3pt;
   }
     .title + .fas:first-of-type:not(.manos, .fa-users){
