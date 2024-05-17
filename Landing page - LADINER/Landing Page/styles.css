@@ -1,0 +1,279 @@
+@import url(00_definitions.css);
+@import url(01_reset.css);
+@import url(02_effects.css);
+/*^^^^RESETEADOS los estilos e importados los css adicionales
+-----------------
+Guia de estilos:
+1. LAYOUT
+2. GENERIC ITEMS
+3. ESPECIFIC ITEMS
+4. LIST
+-----------------
+
+/* -------- 1. LAYOUT -------- */
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  font: 200 22px/1.5 'Roboto Condensed';
+  background-color: var(--first-color);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+	.header {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    min-width: 100%;
+    height: 450px;
+    background: linear-gradient(#eee, var(--first-color));
+    background-size: cover;
+    opacity: 90%;
+  }
+
+    .header-title {
+      align-self: flex-end;
+      position: absolute;
+      right: 1px;
+      background-color: hsla(0, 0%, 0%, 0.10);
+      border-radius: 20% 15% 0% 0%;
+      font: 500 60px/1.3 'Ladiner Font';
+      letter-spacing: -2pt;
+      color: var(--second-color);
+      padding: 0px 10px 0px 5px;
+      cursor: default;
+    }
+
+    .theme-selector{
+      align-self: flex-start;
+      border-radius: 10px;
+      color: #fff;
+      background-color: #899;
+      border: 1px dashed gray;
+      position: absolute;
+      top: 1px;
+      right: 2px;
+      opacity: 20%;
+    }
+
+    .logo{
+      align-self: center;
+      position: absolute;
+      left: 150px;
+      background: var(--logo-img) no-repeat center top;
+      background-size: contain;
+      width: 680px;
+      height: 365px;
+      opacity: 90%;
+      -webkit-transition: all 1s ease;
+    }
+
+  .navbar {
+    z-index: 200;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 63px;
+    background: var(--first-color);
+    border: 3px double var(--second-color);
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .list-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+	   .list-products figure {
+       display: flex;
+       justify-content:center;
+       align-items:center;
+       flex-flow:column;
+     }
+
+/* -------- 2. GENERIC ITEMS -------- */
+
+  .navbar a {
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 300 24px/1.7 'Cormorant Garamond';
+    color: var(--third-color);
+  }
+  /*uso <a> para poner varios fa- agrupados*/
+  a[class^=fa-]{
+    padding-left: 3px;
+  }
+
+  .title {
+    z-index: 1;
+    margin-bottom: 40px;
+    font: 800 70px/1.1 'Ladiner Font';
+    letter-spacing: -2.5pt;
+    text-transform: uppercase;
+    display: inline-block
+  }
+
+
+    .title + .fas:first-of-type:not(.manos,.fa-phone,.fa-map-marker-alt){
+      z-index: 20;
+      position: relative;
+      right: 580px;
+      width: 750px;
+      text-align: right;
+    }
+
+    .title + .fas:first-of-type{
+      z-index: 20;
+      position: relative;
+      right: 480px;
+      width: 600px;
+      text-align: right;
+    }
+
+    h2 strong{
+      font-size: 70px;
+      font-weight: 900;
+    }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: inline-flex;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    padding: 10px 40px;
+    border:2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #btn_subir {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 45px;
+   z-index: 99;
+   border: 1px solid;
+   text-decoration: none;
+   background-color: var(--first-color);
+   color: var(--third-color);
+   cursor: pointer;
+   padding: 15px;
+   border-radius: 40%;
+   opacity: 80%;
+  }
+  #btn_subir:hover {
+   background-color: #333;
+   transform: translateY(-15px);
+   transition: 1s all ease;
+  }
+
+/* -------- 3. PARTS OF WEB -------- */
+
+  .content {
+    padding: 80px 0;
+  }
+
+  .who {
+    background: var(--first-color);
+    color: #fff;
+  }
+
+	.info {
+    background: var(--second-color);
+    color: var(--third-color);
+  }
+
+  .info p, .ourfocus p {
+    max-width: 1055px;
+    margin: 0 auto;
+  }
+
+  .products {
+    background: var(--third-color);
+    color: #fff;
+  }
+
+  .contactus {
+    background: url(images/dummy-contacto.png) no-repeat center top;
+    color: #fff;
+    text-align: left;
+  }
+    .contactus p {
+      max-width: 800px;
+    }
+
+    .contactus ul{
+      display: inline-table;
+      text-align: center;
+      padding: 30px;
+    }
+
+  .art-content {
+    max-width: 1055px;
+    margin: 0 auto;
+  }
+
+  .our-clients {
+    color: var(--third-color);
+    padding-bottom: 10px;
+    min-width: 1200px;
+    height: 400px;
+  }
+
+  .our-clients li{
+    display: inline-flex;
+    padding: 10px 10px;
+  }
+
+/* -------- 4. LIST -------- */
+
+  .list-products figure {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: default;
+  }
+
+  .list-products img {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    opacity: 95%;
+  }
+
+  .list-products figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -45px;
+  }
+
+  .list-products img[src="images/ico-2.png"] ~ figcaption{
+    bottom: -70px;
+  }
+
+  .list-products li {
+    padding: 0 30px;
+  }
+
+  #templateinfo{
+    width: 100%;
+    color: darkred;
+    font-weight: bolder;
+    background-color: var(--third-color);
+  }

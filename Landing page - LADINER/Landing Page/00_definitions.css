@@ -1,0 +1,14 @@
+:root {
+  /*AZULES metal-marino-metal_claro*/
+  --first-color: #316ba9;
+  --second-color: #103566;
+	--third-color: #88a7d0;
+  /*IMAGEN CABECERA y logo*/
+  --header-img: url(images/header-01.png);
+  --logo-img: url(images/logo.png);
+}
+
+@font-face {
+  font-family: 'Ladiner Font';
+  src: url('fonts/VAG_Rounded_BT.ttf') format('truetype');
+}

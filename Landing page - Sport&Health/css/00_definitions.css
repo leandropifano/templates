@@ -1,0 +1,28 @@
+/* -------- THEME --------*/
+:root {
+  --first-color: #a5a5a5;
+  --second-color: #665d5d;
+	--third-color: #b0041c;
+  /*-------IMAGENES---------*/
+  --header-img: url(../images/header-01.png);
+  --logo-img: url(../images/logo.png);
+}
+
+/*:root {
+  /*AZUL cobalto-marino-turquesa
+  --first-color: #333c87;
+  --second-color: #000080;
+	--third-color: #5dc1b9;
+}
+
+/*:root {
+  /*NARANJA neon-caqui-ocre
+  --first-color: #ffa420;
+  --second-color: #e25f23;
+	--third-color: #cc7722;
+}*/
+
+@font-face {
+  font-family: 'SportRecovery';
+  src: url('../fonts/Akira_Expanded.otf') format('opentype');
+}

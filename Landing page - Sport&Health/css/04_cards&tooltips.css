@@ -1,0 +1,103 @@
+.card{
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 5px 2px #333;
+    width: 280px;
+    height: 250px;
+    margin: 10px;
+}
+
+.card-title{
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+    min-width: 100%;
+    background-color: var(--first-color);
+    color: #333;
+    border-radius: inherit;
+    border-bottom: 2px double;    
+    margin-bottom: 30px;
+    padding: 5px 1px 7px 1px;
+    font-size: 22px;
+    line-height: 25px;
+}
+.card-title p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body{
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: inherit;
+}
+.card p{
+    align-self: flex-start;
+}
+.card p span{
+    padding: 30px 5px 30px 5px;
+}
+
+.card a{
+    align-self: flex-end;
+    position: relative;
+    top: 3px;
+    right: 40%;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    opacity: 75%;
+    border-radius: 3px 3px 3px 3px;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px #000, 0px 0px 3px #fff, 0px 0px 6px var(--third-color);
+    padding: 4px;
+    margin: 2px 5px 0 0;
+}
+ 
+#card-us-01 .card-body{
+    background: url("../images/avatar-Marcos.png") no-repeat center top;
+    background-size: cover;
+    border: 3px double #ccc;
+}
+
+/*-------------------------------------------------------------------------*/
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    min-width: 120px;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    font-weight: bold;
+    text-align: center;
+    white-space: pre;
+    padding: 5px 3px;
+    border-radius: 6px;
+    margin-left: -60px;
+    visibility: hidden;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  /*Tooltip Arrow*/
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* Arriba del tooltip */
+    left: 40%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--second-color) transparent;
+  }
+  

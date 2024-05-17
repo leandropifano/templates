@@ -1,0 +1,56 @@
+/*----EFECTS TRANSFORM-TRANSITIONS----*/
+.header-title:hover{
+  /*background-color: hsla(360, 100%, 100%, 0.30);*/
+  text-shadow: 3px 3px 4px #000, -4px -4px 6px #ccc;
+  transition: 0.5s all ease;
+}
+
+.logo:hover{
+    opacity: 1;
+    filter: brightness(1.4) contrast(1.3);
+    transition: 1s ease;}
+
+.theme-selector:hover{
+    opacity: 100%;}
+
+.navbar a:hover{
+  filter: brightness(1.2);
+  text-shadow: 1px 1px 1px;}
+
+/*---Se activa con script.js---*/
+.aparecer{
+    position: relative;
+    opacity: 0;
+    transition: 2s all ease }
+.aparecer.active{
+    opacity: 1 }
+/*-----------------------------*/
+
+.title + .fa-question:hover{
+    transform: rotate(-10deg);
+    transition: 1.5s}
+
+.title + .fa-check:hover{
+    transform: translate(-1.3em,0) scale(1.2);
+    transition: all 1.5s}
+
+.title + .fa-list:hover{
+    transform: skewX(20deg);
+    transition: 1.5s}
+
+.title + .fa-phone:hover{
+    transform: translate(1em,0) rotate(-10deg);
+    transition: 0.7s}
+
+.title + .fa-map-marker-alt:hover{
+    transform: skewY(5deg);
+    transition: 1s}
+
+.btn:hover{
+    background: hsla(360, 100%, 100%, 0.5);}
+
+.list-products figure:hover img {
+    box-shadow: 8px 8px 10px hsla(360, 100%, 100%, 0.5);}
+
+.list-products figure:hover figcaption{
+    font-weight: bold;}

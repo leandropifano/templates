@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sport&Health | Home</title>
+	<link rel="icon" type="image/x-icon" href="images/SportRecovery.ico">
+	<!--ESTILOS Y JAVASCRIPT-->
+	<link rel="stylesheet" type="text/css" href="css/main_styles.css">
+	<!--SCRPIPT PRINCIPAL-->
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--Selector de tema-->
+	<script type="text/javascript" src="js/theming.js"></script>
+	<!--FUENTES DE GOOGLE-->
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lalezar' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+	<!--ICONOS Font Awesome-->
+	<script src="https://kit.fontawesome.com/300d4100ca.js" crossorigin="anonymous"></script>
+</head>
+<body onpageshow="seteo_selects(); card_generator();" onscroll="scroll_to()">
+	<!-- Para el boton subir -->
+	<section id="top" name="top" class="top"></section>
+	<!--LOADER-->
+	<section class="loader-wrapper" id="loader-wrapper">
+    	<span class="loader"><i class="fas fa-2x fa-spinner fa-spin"></i></span>
+	</section>
+
+	<header class="header">
+		<img id="background-video" src="images/header-01.png"></img>
+
+		<!--section class="header-title">
+			<h1>SPORT & HEALTH </h1>
+			<span>Uruguay</span>
+		</section-->
+		<section class="logo">
+			<h1 alt="SportRecovery"></h1>
+			<section class="logo-light">
+				<h1 alt="SportRecovery"></h1>
+			</section>
+		</section>
+
+	</header>
+
+	<!---MODALS CSS------------------------------------------------>
+		<div id="openModal-WHO-01" class="modalDialog">
+			<div>
+				<a href="#closeModal-WHO-01" title="Cerrar" class="close">X</a>
+				<figure class="avatar"><i class="fas fa-3x fa-user"></i></figure>
+				<h2 class="modal-header">Entrenador 1</h2>
+				<p>Pellentesque lacinia mollis dolor sit amet venenatis.</p>
+				<p>Fusce euismod rhoncus magna, quis tincidunt orci dictum at. Maecenas vitae cursus diam, vitae consectetur elit. Maecenas efficitur auctor faucibus. Nulla id justo libero. Aenean sodales erat in sem posuere eleifend.</p>
+			</div>
+		</div>
+		<div id="openModal-WHO-02" class="modalDialog">
+			<div>
+				<a href="#closeModal-WHO-02" title="Cerrar" class="close">X</a>
+				<figure class="avatar"><i class="fas fa-3x fa-user"></i></figure>
+				<ul><h2 class="modal-header">Entrenador 2</h2></ul>
+				<li><i class="fas fa-check"></i> Maecenas vitae cursus diam, vitae consectetur elit.</li>
+				<li><i class="fas fa-check"></i> Maecenas efficitur auctor faucibus.</li>
+				<li><i class="fas fa-check"></i> Nulla id justo libero.</li>
+				<li><i class="fas fa-check"></i> Aenean sodales erat in sem posuere eleifend.</li>
+				<li><i class="fas fa-check"></i> Lorem Ipsum.</li><br>
+				<p><i class="fas fa-xs fa-quote-left"></i> Fusce euismod rhoncus magna, quis tincidunt orci dictum at. Maecenas vitae cursus diam, vitae consectetur elit. Maecenas efficitur auctor faucibus. Nulla id justo libero. <i class="fas fa-xs fa-quote-right"></i></p>
+				<p><i class="fas fa-xs fa-quote-left"></i> Pellentesque lacinia mollis dolor sit amet venenatis. <i class="fas fa-xs fa-quote-right"></i></p>
+			</div>
+		</div>
+		<div id="openModal-WHO-03" class="modalDialog">
+			<div>
+				<a href="#closeModal-WHO-03" title="Cerrar" class="close">X</a>
+				<figure class="avatar"><i class="fas fa-3x fa-user"></i></figure>
+				<h2 class="modal-header">Entrenador 3</h2>
+				<p>Pellentesque lacinia mollis dolor sit amet venenatis.</p>
+				<p>Fusce euismod rhoncus magna, quis tincidunt orci dictum at. Maecenas vitae cursus diam, vitae consectetur elit. Maecenas efficitur auctor faucibus. Nulla id justo libero. Aenean sodales erat in sem posuere eleifend.</p>
+			</div>
+		</div>
+	<!--END MODALS CSS--------------------------------------------->
+
+	<nav class="navbar" id="navbar">
+		<i class="navbar-ico" id="navbar-ico"></i>
+		<a href="#top">Inicio<span class="fas fa-sm fa-arrow-up"></span></a>
+		<a href="#us">Nosotros<span class="fas fa-sm fa-angle-double-left"></span></a>
+		<a href="#ourfocus">Nuestro enfoque<span class="fas fa-sm fa-angle-double-left"></span></a>
+		<a href="#services">Servicios<span class="fas fa-sm fa-angle-double-left"></a>
+		<a href="#ourplace">Instalaciones<span class="fas fa-sm fa-angle-double-left"></a>
+		<a href="#contactus">Contacto<span class="fas fa-sm fa-angle-double-left"></a>
+		<a href="#location">Localización<span class="fas fa-sm fa-angle-double-left"></a>
+
+		<div class="theme-selector">
+			<label for="theme-color">Color: </label>
+			<select name="theme-color" id="theme-color" title="color-01" onchange="seteo_color()">
+				<option value="color-01" default selected="selected">Grises y Rojo</option>
+				<option value="color-02">Rojos</option>
+				<option value="color-03">Rojos y Gris</option>
+			</select>
+		</div>
+	</nav>
+
+	<section class="container content us" id="us">
+		<h2 class="title deslizar desizq">Nosotros <span class="fas fa-users deslizar desizq"></span></h2><br>
+		
+		<div class="container-uscards">
+			<div id="card-us-01" class="card">
+				<div class="card-body">
+					<a href="#openModal-WHO-01"><span class="fas fa-1x fa-clipboard-list"></span>&nbsp; Entrenador 1</a>
+					<p><span class="fas fa-6x fa-user"></span></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<a href="#openModal-WHO-02"><span class="fas fa-1x fa-clipboard-list"></span>&nbsp; Entrenador 2</a>
+					<p><span class="fas fa-6x fa-user"></span></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<a href="#openModal-WHO-03"><span class="fas fa-1x fa-clipboard-list"></span>&nbsp; Entrenador 3</a>
+					<p><span class="fas fa-6x fa-user"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<figure class="us-slogan">
+				<figcaption>Sport & Health</figcaption>
+				<span>"Una frase motivadora que denote la personalidad y sentido de ser del lugar.”</span>
+		</figure>
+
+		<figure class="us-pic" title="Nosotros - SportRecovery"></figure>
+		
+	</section>
+
+	<section class="content ourfocus" id="ourfocus">
+		<h2 class="title deslizar desder">Nuestro Enfoque <span class="fas focus deslizar desder"><a class="fa-dumbbell"></a><a class="fa-heartbeat"></a><a class="fa-basketball-ball"></a></span></h2>
+		<p>Somos una clínica de medicina alternativa y entrenamiento, cuya finalidad es obtener el
+			mejor tratamiento y diagnóstico de cualquier tipo de lesión mecánica del sistema
+			músculo-esquelético, además de sacar el máximo rendimiento de cada uno de nuestros
+			clientes tanto en la vida como en el deporte.
+		</p>
+		<p>Esto se logrará mediante una evaluación
+			exhaustiva del movimiento y la postura de cada individuo y en base a éste, formaremos un
+			plan especializado y personal para llegar al objetivo de nuestros alumnos y pacientes.
+		</p>
+	</section>
+
+	<section class="content services" id="services">
+		<h2 class="title deslizar desder">Servicios <span class="fas fa-clinic-medical deslizar desder"></span></h2>
+		
+		<div class="planes-ent">
+			<h3 class="subtitle deslizar desizq">Planes de Entrenamiento <span class="fas fa-running deslizar desizq"></span></h3>
+			<p>Son planes totalmente personalizados, en base a las limitaciones y objetivos de cada cliente.<br>
+			Trabajamos con grupos super reducidos para garantizar el trato y la atención individual.</p>
+
+			<div class="card">
+				<div class="card-title">
+					<h3>Ejemplo plan 1</h3>
+					<p>descripción corta</p>
+				</div>
+				<div class="card-body">
+					<p>Detalle del plan</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-title">
+					<h3>Ejemplo plan 2</h3>
+					<p>descripción corta</p>
+				</div>
+				<div class="card-body">
+					<p>Detalle de otro plan</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-title">
+					<h3>Ejemplo plan 3</h3>
+					<p>descripción corta</p>
+				</div>
+				<div class="card-body">
+					<p>Detalle del tercer plan</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="tratamientos">
+			<h3 class="subtitle deslizar desder">Terapia Manual Ortopédica <span class="fas fa-hand-holding-medical deslizar desder"></span></h3>
+			
+			<p>Se basa en una sesión que agrupa diferentes técnicas manuales e instrumentales<br>que ayudan a tratar las
+				disfunciones del sistema músculo-esquelético específicas de cada paciente.</p>
+
+			<ul class="list-tratamientos">
+				<li>
+					<figure>
+						<img src="images/icons/icon-columnavert.svg">
+						<figcaption>Quiropráxia</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/icons/icon-agujas.svg">
+						<figcaption>Punción Seca</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/icons/icon-massagegun.svg">
+						<figcaption>Terapia de Percusión</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/icons/icon-cupping.svg">
+						<figcaption>Cupping</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/icons/icon-socks.svg">
+						<figcaption>Presoterapia</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/icons/icon-masajes.svg">
+						<figcaption>Masajes</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="content ourplace" id="ourplace">
+		<h2 class="title deslizar desder">Instalaciones <span class="fas fa-warehouse deslizar desder"></span></h2>
+		<p><figure class="ourplace-pic" title="Nuestro lugar">
+			<figcaption>Contamos con un espacio equipado <br> para la práctica de los entrenamientos <br> y con un consultorio privado <br> para las sesiones de
+				terapia manual.
+			</figcaption>
+		</figure></p>
+	</section>
+
+	<section class="content contactus" id="contactus">
+		<article class="art-content">
+			<h2 class="title deslizar desizq">Contacto <span class="fas fa-phone fa-flip-horizontal deslizar desizq"></span></h2>
+			<p>Si te interesa alguno de nuestros servicios o tenes alguna consulta,<br>no dudes en contactarte!</p>
+			<p>
+				<div class="tooltip"><img src="images/icons/icon-whatsapp.svg" alt=""><span class="tooltiptext">(+598)97 953 032</span></div>
+				<div class="tooltip"><img src="images/icons/icon-instagram.svg" alt="instagram: @sportrecovery_uy"><span class="tooltiptext">@sportrecovery_uy</span></div>
+				<div class="tooltip"><img src="images/icons/icon-tiktok.svg" alt="tik-tok: @sportrecovery_"><span class="tooltiptext">@sportrecovery_</span></div>
+			</p>
+			<p><i class="fas fa-1x fa-phone-alt"></i> 097953032 <br>
+				<a href="mailto:info@sportrecovery.com"><i class="fas fa-1x fa-envelope"></i> info@sportrecovery.com</a>
+			</p>
+		</article>
+	</section>
+
+	<!--BOTON SUBIR-->
+	<a id="btn_subir" href="#top" title="Subir" class="fas fa-2x fa-arrow-up"></a>
+	<!----------------------------------->
+
+	<section class="content location" id="location">
+		<h2 class="title deslizar desder">Localizaci<strong>ó</strong>n <span class="fas fa-map-marker-alt deslizar desder"></span></h2>
+		<p>Pocitos. Montevideo, Uruguay. <br>
+			<strong>Buxareo 1286</strong></p>
+		<figure class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2969.4780608725064!2d-56.142943762414674!3d-34.90700507295847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2suy!4v1645576413104!5m2!1ses!2suy" width="100%" height="450px" allowfullscreen="" loading="lazy"></iframe>
+		</figure>
+	</section>
+
+</body>
+</html>

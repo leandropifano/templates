@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ladiner S.A. | Home</title>
+	<!--ESTILOS Y JAVASCRIPT-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+	<!--FUENTES DE GOOGLE-->
+	<link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+	<!--ICONOS Font Awesome-->
+	<script src="https://kit.fontawesome.com/300d4100ca.js" crossorigin="anonymous"></script>
+</head>
+<body onload="seteo_selects()" onscroll="scroll_to()">
+	<!-- Para el boton subir -->
+	<section id="top" name="top" class="top"></section>
+
+	<header class="header">
+		<section class="theme-selector">
+
+			<label for="theme-color">Color: </label>
+			<select name="theme-color" id="theme-color" title="color-01" onchange="seteo_color()">
+				<option value="color-01" default selected="selected">Azules Pastel</option>
+				<option value="color-02">Azules Vivos</option>
+				<option value="color-03">Azules y Gris</option>
+			</select>
+
+			<label for="theme-img">Cabecera: </label>
+			<select name="theme-img" id="theme-img" onchange="seteo_img()">
+				<option value="img-01" selected>SinFondo</option>
+				<option value="img-02">Mosaico</option>
+				<option value="img-03">Calle</option>
+
+			</select>
+
+		</section>
+
+		<section class="header-title">
+			<h1>PONY - URUGUAY</h1>
+		</section>
+
+		<section class="logo" title="Ladiner S.A.">
+			<h1 alt="LadinerSA"></h1>
+		</section>
+
+	</header>
+	<div id="templateinfo"><strong>ESTA WEB ES UN TEMPLATE, LA INFORMACIÓN QUE CONTIENE NO CONSTA DE VALOR NI SENTIDO COMERCIAL.</strong></div>
+	<nav class="navbar" id="navbar">
+		<a href="">Inicio</a>
+		<a href="#who">Quienes Somos</a>
+		<a href="#info">Tips</a>
+		<a href="#products">Productos</a>
+		<a href="#contactus">Contacto</a>
+		<a href="#our-clients">Nuestros Clientes</a>
+	</nav>
+	<section class="content who" id="who">
+		<h2 class="title aparecer">Quienes somos</h2> <span class="fas fa-3x fa-question aparecer"></span>
+		<p>Nuestra empresa está dedicada a importar y distribuir artículos para manualidades y artesanías; en particular costura, bordado, tejido, fieltro, otros accesorios y complementos.</p>
+		<p>Nos dedicamos a proveer  recursos para quienes se dedican al arte de hacer.</p>
+		<p>Somos los distribuidores de la marca PONY en Uruguay.</p>
+		<p>No dude en contactarse con nosotros para cualquier información que precise.</p>
+	</section>
+
+	<section class="content info" id="info">
+		<h2 class="title aparecer">Tips</h2><span class="fas fa-3x fa-list aparecer"></span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis ligula felis, placerat feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+		<p>Nunc neque tortor, rutrum a ex ac, ornare lacinia ante. Vivamus quis lacus non elit finibus ultricies. <br>Etiam porttitor leo ac turpis porttitor sollicitudin. Phasellus in nulla magna. Etiam et eros hendrerit, malesuada tortor et, tincidunt felis. Fusce sed lacinia felis. Pellentesque lacinia mollis dolor sit amet venenatis. Fusce euismod rhoncus magna, quis tincidunt orci dictum at. Maecenas vitae cursus diam, vitae consectetur elit. <br> Maecenas efficitur auctor faucibus. Nulla id justo libero. Aenean sodales erat in sem posuere eleifend.  </p>
+	</section>
+
+	<section class="content products" id="products">
+		<h2 class="title aparecer">Productos</h2> <span class="fas fa-3x fa-check aparecer"></span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis ligula felis, placerat<br> feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+
+		<ul class="list-products">
+			<li>
+				<figure>
+					<img src="images/ico-1.png">
+					<figcaption>Tejido</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/ico-2.png">
+					<figcaption>Costura y Bordado</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/ico-3.png">
+					<figcaption>Puntillas</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</section>
+
+	<section class="content contactus" id="contactus">
+		<article class="art-content">
+			<h2 class="title aparecer">Contacto</h2><span class="fas fa-3x fa-phone aparecer"></span>
+			<p>Si le interesan nuestros productos y quiere venderlos en su comercio, contacte con nosotros.</p>
+			<ul><li>Teléfonos</li><li>(+598)</li><li>1234 5678</li><li>123 456 789</li><li>321 654 987</li></ul>
+			<ul><li>e-mail</li><li>mail@mailfake.com</li><li>another@fakemail.com.uy</li></ul>
+
+			<a href="" class="btn">Déjanos un mensaje</a>
+		</article>
+	</section>
+
+	<!--BOTON SUBIR-->
+	<a id="btn_subir" href="#top" title="Subir" class="fas fa-2x fa-arrow-up"></a>
+	<!----------------------------------->
+
+	<section class="content our-clients" id="our-clients">
+		<h2 class="title aparecer">Nuestros Clientes</h2><span class="fas fa-3x fa-map-marker-alt aparecer"></span>
+		<ul>
+			<li>Cliente 01 - Zona 1</li>
+			<li>Cliente 02 - Zona 1</li>
+			<li>Cliente 03 - Zona 3</li>
+			<li>Cliente 04 - Zona 5</li>
+			</br>
+			<li>Cliente 05 - Zona 2</li>
+			<li>Cliente 06 - Zona 2</li>
+			<li>Cliente 07 - Zona 1</li>
+			<li>Cliente 08 - Zona 4</li>
+		</ul>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+/*------------MODAL CSS-------------------------------------*/
+.modalDialog {
+	z-index: 99999;
+	/*por defecto no se muestra, aunque esta cargado desde un inicio*/
+	opacity:0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font: 200 21px/1.4 "Roboto Condensed";
+	/*oscurezco el resto de la pantalla*/
+	background: rgba(0,0,0,0.75);
+	-webkit-transition: opacity 600ms ease-in;
+	-moz-transition: opacity 600ms ease-in;
+	transition: opacity 600ms ease-in;
+	/*desactivo los eventos del mouse*/
+	pointer-events: none;
+}
+/*se muestra en el evento target, al hacerle referencia en el html con un href*/
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 650px;
+	position: relative;
+	margin: 5% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	color: var(--third-color);
+	text-shadow: 1px 1px 1px var(--second-color);
+	background-color: var(--first-color);
+}
+/*para que el fondo del modal sea transparente*/
+.modalDialog > div::after {
+	content: "";
+	z-index: 99990;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: url("../images/SOLO-logo.png") no-repeat center center;
+	background-size: contain;
+	opacity: 0.08;
+}
+
+.modalDialog li{
+	text-align: left;
+	list-style: none;
+	margin-left: 25px;
+}
+.modalDialog i{
+	color: #333;
+}
+.modalDialog .avatar{
+	position: relative;
+	top: 20px;
+	left: 10px;
+	float: left;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px 2px var(--third-color);
+	margin: 0 25px 20px 0;
+}
+.avatar i{
+	padding: 15px 0 0 0 !important;
+	margin: 0 0 0 0 !important;
+}
+.avatar img{
+	width: 100px;
+	height: 100px;
+	border-radius: inherit;
+	border: 3px double #333;
+}
+.modal-header{
+	font: 28px "Anton";
+	letter-spacing: 1pt;
+  	margin-bottom: 15px;
+}
+.close {
+	background: #333;
+	color: var(--second-color);
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.close:hover {
+	background: var(--third-color);
+}
