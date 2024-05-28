@@ -15,7 +15,7 @@
     top: 0;
     min-width: 100%;
     background-color: var(--first-color);
-    color: #333;
+    color: var(--third-color);
     border-radius: inherit;
     border-bottom: 2px double;    
     margin-bottom: 30px;

@@ -227,15 +227,62 @@ body {
   .ourfocus p {
     max-width: 1055px;
     margin: 20px auto;
+    color: white;
   }
 
 	.us {
     background: var(--first-color);
-    min-height: 545px;
+    min-height: 40%;
+    min-width: 80%;
   }
   .us .title{
     color: var(--third-color);
   }
+
+  .us-slogan{
+    display: inline-flex;
+    position: relative;
+    margin-right: 49%;
+    min-width: 30%;
+    min-height: 300px;
+    background: url("../images/logo.png") no-repeat center top;
+    background-size: contain;
+  }
+  .us-slogan figcaption{
+    display: inline-flex;
+    position: absolute;
+    top: 95%;
+    left: 12%;
+    font: 600 50px 'Lalezar';
+    font-style: italic;
+    white-space: pre;
+    color: var(--third-color);
+    text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 2px black, 0px 0px 8px black, 0px 0px 1px black;
+  }
+
+  .us-slogan > span{
+  display: inline-flex;
+  position: absolute;
+  min-width: 110%;
+  margin-left: 95%;
+  font: 600 50px 'Indie Flower';
+  font-style: italic;
+  color: #ccc;
+  text-shadow: 2px 2px 4px var(--third-color);
+  }
+
+  .us-pic{
+    display: inline-flex;
+    margin-top: 5%;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    aspect-ratio: 17 / 10;
+    background: url("../images/dummy-us.png") no-repeat center top;
+    background-size: cover;
+    border: 8px double #ccc;
+  }
+  /*
   .us-slogan{
     display: inline-flex;
     position: relative;
@@ -274,6 +321,7 @@ body {
     border: 8px double #ccc;
     margin-top: 20px;
   }
+  */
   .container-uscards{
     display: flex;
     flex-direction: column;

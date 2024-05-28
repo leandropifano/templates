@@ -1,15 +1,13 @@
 /* -------- THEME --------*/
-:root {
+/*:root {
+  /*ROJO
   --first-color: #a5a5a5;
   --second-color: #665d5d;
 	--third-color: #b0041c;
-  /*-------IMAGENES---------*/
-  --header-img: url(../images/header-01.png);
-  --logo-img: url(../images/logo.png);
-}
+}*/
 
-/*:root {
-  /*AZUL cobalto-marino-turquesa
+:root {
+  /*AZUL cobalto-marino-turquesa*/
   --first-color: #333c87;
   --second-color: #000080;
 	--third-color: #5dc1b9;
@@ -21,6 +19,12 @@
   --second-color: #e25f23;
 	--third-color: #cc7722;
 }*/
+
+:root{
+    /*-------IMAGENES---------*/
+    --header-img: url(../images/header-01.png);
+    --logo-img: url(../images/logo.png);
+}
 
 @font-face {
   font-family: 'SportHealth';
