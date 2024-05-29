@@ -46,10 +46,10 @@ function scroll_to(){
   var pos_us = document.getElementById('us').getBoundingClientRect();
   //----------------------------------------------------------------------
   //Cuando el logo del header y el de seccion us ya no se ven, muestro el icono del navbar
-  if (pos_us.bottom <= window.innerHeight ){
+  if (pos_us.bottom + 200 <= window.innerHeight ){
     document.getElementById('navbar-ico').style.opacity = "92%";
   }//chequeo para ocultarlo cuando el logo grande esta a la vista
-  else if (pos_us.bottom >= window.innerHeight + 200){
+  else if (pos_us.bottom >= window.innerHeight){
     document.getElementById('navbar-ico').style.opacity = "0%";
  }
   //----------------------------------------------------------------------

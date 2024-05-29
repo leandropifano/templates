@@ -245,16 +245,16 @@ body {
     left: 2%;
     margin: 0;
     min-width: 30%;
-    min-height: 300px;
+    min-height: 30%;
     background: url("../images/logo.png") no-repeat left top;
-    background-size: auto;
+    background-size: contain;
   }
   .us-slogan figcaption{
     display: inline-flex;
     position: absolute;
-    top: 75%;
-    left: -4%;
-    font: 600 50px 'Lalezar';
+    top: 99%;
+    left: 3%;
+    font: 600 2vw 'Lalezar';
     font-style: italic;
     white-space: pre;
     color: var(--third-color);
@@ -264,9 +264,9 @@ body {
   .us-slogan > span{
   display: inline-flex;
   position: absolute;
-  min-width: 110%;
+  min-width: 115%;
   margin-left: 95%;
-  font: 600 50px 'Indie Flower';
+  font: 600 3vw 'Indie Flower';
   font-style: italic;
   color: #ccc;
   text-shadow: 2px 2px 4px var(--third-color);
@@ -278,15 +278,14 @@ body {
     left: 15%;
     padding-top: 0px;
     margin-top: 22%;
-    width: 100%;
-    max-width: 850px;
+    max-width: 80%;
     min-height: 45%;
     aspect-ratio: 19 / 8;
     background: url("../images/dummy-us.png") no-repeat center top;
     background-size: cover;
     border: 8px double #ccc;
   }
-  
+
   .container-uscards{
     display: flex;
     flex-direction: column;
@@ -317,7 +316,7 @@ body {
     height: 120px;
     background-color: #fff;
     border-radius: 50%;
-    border: 1px dotted #333;
+    border: 0.5px dashed #333;
   }
   .list-tratamientos img {
     position: relative;
