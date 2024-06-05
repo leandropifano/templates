@@ -51,7 +51,12 @@ VERDE oscuro-cielo-pistacho*/
 		.navbar .item { display: flex; flex-flow:column; align-items:center; justify-content:flex-start; width: 33%; font-size: 11px; }
 			.item span:first-child { background: var(--third-color); width: 60px; line-height: 60px; border-radius: 50%; color: #fff; font-weight: bold; font-size: 55px; text-align: center;margin-bottom: 10px; }
 			.item span:last-child { max-width: 50px; text-align: center;}
-
+			span[class='selected']{
+				border: 3.5px double var(--first-color);
+				font-weight: bolder !important;
+				font-size: 65px !important;
+				color: var(--first-color) !important;
+			}
 
 /* -------- 4. FORM -------- */
 
@@ -84,3 +89,9 @@ VERDE oscuro-cielo-pistacho*/
 		.form select { width: 120%;}
 
 	.error { position: relative; display: none; margin-top: -15px; margin-bottom: 30px; text-align: right; font-size: 14px; font-weight: 400; color: #ff1400;}
+
+	.register{
+		color: var(--second-color);
+		font-weight: bolder;
+		letter-spacing: 0.05em;
+	}
